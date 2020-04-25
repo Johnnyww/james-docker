@@ -1,4 +1,5 @@
 # Run James
+
 FROM openjdk:8u252-jdk
 
 MAINTAINER johnnyww "chenjunx@outlook.com"
