@@ -25,7 +25,7 @@ jobs:
                 DOCKER_PASSWORD: ${{ secrets.ALIYUN_DOCKER_PASSWORD }}
                 DOCKER_USERNAME: ${{ secrets.ALIYUN_DOCKER_USERNAME }}
             run: |
-                echo "${DOCKER_PASSWORD}" | docker login --username ${DOCKER_USERNAME} registry.cn-shenzhen.aliyuncs.com --password-stdin
+                echo "${DOCKER_PASSWORD}" & echo "${DOCKER_USERNAME}"
       -
             name: Set up Docker Buildx
             id: buildx
