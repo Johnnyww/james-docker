@@ -30,7 +30,7 @@ jobs:
             name: Build dockerfile (with push)
 
             run: |
-                docker build -t registry.cn-shenzhen.aliyuncs.com/chenjunxinprojects/james-docker:v3.3.0 . \
+                docker build -f ./Dockerfile -t registry.cn-shenzhen.aliyuncs.com/chenjunxinprojects/james-docker:v3.3.0 . \
                 docker push registry.cn-shenzhen.aliyuncs.com/chenjunxinprojects/james-docker:v3.3.0
    
 
